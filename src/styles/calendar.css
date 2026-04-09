@@ -19,8 +19,12 @@ body {
   -ms-transform: scale(0.9);
   -ms-transform-origin: 0 0;
   transform: scale(0.9);
-  transform-origin: 0 0;
+  transform-origin: center center; /* Center the scaling */
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
 .calendar-app {
