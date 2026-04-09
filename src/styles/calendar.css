@@ -24,14 +24,15 @@ body {
 }
 
 .calendar-app {
-  max-width: 1400px; /* Increased max width for better centering */
-  margin: 0 auto 0 5%; /* Shift more to the right and center */
+  max-width: 1200px; /* Optimal width for calendar layout */
+  margin: 0 auto; /* Perfect centering - no right shift */
   padding: 20px;
   display: flex;
   gap: 30px;
   min-height: 100vh;
-  width: auto; /* Remove fixed width compensation */
+  width: 100%; /* Full width within container */
   justify-content: center; /* Center the content */
+  align-items: flex-start; /* Align to top, remove bottom space */
 }
 
 .calendar-container {
@@ -328,16 +329,19 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
+    align-items: center;
   }
   
   .calendar-container {
     margin-bottom: 0;
     order: 1;
+    width: 100%;
   }
   
   .notes-panel {
     width: 100%;
     order: 2;
+    max-width: 100%;
   }
   
   .calendar-grid {
